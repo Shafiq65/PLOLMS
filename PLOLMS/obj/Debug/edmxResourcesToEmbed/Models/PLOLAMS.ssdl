@@ -1,0 +1,697 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PLOLAMSModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Cell">
+    <Key>
+      <PropertyRef Name="CellId" />
+    </Key>
+    <Property Name="CellId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CellName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CellCode" Type="nvarchar" MaxLength="5" Nullable="false" />
+    <Property Name="CellDesc" Type="nvarchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="Depatrment">
+    <Key>
+      <PropertyRef Name="DepartmentID" />
+    </Key>
+    <Property Name="DepartmentID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DepartmentName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DepartmentCode" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="DepartmentDesc" Type="nvarchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="Designation">
+    <Key>
+      <PropertyRef Name="DId" />
+    </Key>
+    <Property Name="DId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Dname" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DesignationCode" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="DDesc" Type="nvarchar" MaxLength="200" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DistrictInfo">
+    <Key>
+      <PropertyRef Name="DisId" />
+    </Key>
+    <Property Name="DisId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DivisionId" Type="int" Nullable="false" />
+    <Property Name="DisName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DisCode" Type="nvarchar" MaxLength="5" Nullable="false" />
+    <Property Name="DisDesc" Type="nvarchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="DivisionInfo">
+    <Key>
+      <PropertyRef Name="DivisionId" />
+    </Key>
+    <Property Name="DivisionId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DivisionName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DivisionCode" Type="nvarchar" MaxLength="5" Nullable="false" />
+    <Property Name="DivisionDesc" Type="nvarchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="EmplyeeBaiscInfo">
+    <Key>
+      <PropertyRef Name="EmplyeeId" />
+    </Key>
+    <Property Name="EmplyeeId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="EmplyeeCode" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="EmployeeName" Type="nvarchar" MaxLength="60" Nullable="false" />
+    <Property Name="EmployeeShortName" Type="nvarchar" MaxLength="10" />
+    <Property Name="GenderId" Type="int" Nullable="false" />
+    <Property Name="FatherName" Type="nvarchar" MaxLength="60" />
+    <Property Name="MotherName" Type="nvarchar" MaxLength="60" />
+    <Property Name="HomeDistrict" Type="int" Nullable="false" />
+    <Property Name="ParmanentAddress" Type="nvarchar" MaxLength="150" />
+    <Property Name="PresentAddress" Type="nvarchar" MaxLength="150" />
+    <Property Name="DateOfBirth" Type="datetime" Nullable="false" />
+    <Property Name="EmpMobileNo" Type="nvarchar" MaxLength="20" />
+    <Property Name="EmpEmailAddress" Type="nvarchar" MaxLength="50" />
+    <Property Name="EmployeeImage" Type="nvarchar" MaxLength="100" />
+    <Property Name="JoiningDate" Type="datetime" />
+    <Property Name="IsActiveEmp" Type="bit" Nullable="false" />
+    <Property Name="CreatorId" Type="uniqueidentifier" />
+    <Property Name="CreateDatetime" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="InsideOfficialRecivers">
+    <Key>
+      <PropertyRef Name="IORId" />
+    </Key>
+    <Property Name="IORId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="LetterArchiveId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="DId" Type="int" Nullable="false" />
+    <Property Name="OfficeId" Type="int" Nullable="false" />
+    <Property Name="IORIsRead" Type="bit" Nullable="false" />
+    <Property Name="IORREadDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="JobStatusType">
+    <Key>
+      <PropertyRef Name="JSTId" />
+    </Key>
+    <Property Name="JSTId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="JSTName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="JSCode" Type="nvarchar" MaxLength="5" Nullable="false" />
+    <Property Name="JSTDesc" Type="nvarchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="LetterArchive">
+    <Key>
+      <PropertyRef Name="LetterArchiveId" />
+    </Key>
+    <Property Name="LetterArchiveId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="LetterName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="LetterReferanceNo" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="LetterTypeId" Type="int" Nullable="false" />
+    <Property Name="LetterSubject" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="LetterDate" Type="datetime" Nullable="false" />
+    <Property Name="CeatorId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="CreationDate" Type="datetime" Nullable="false" />
+    <Property Name="CreatorDesignationId" Type="int" Nullable="false" />
+    <Property Name="CreatorOfficeId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="LetterAttachments">
+    <Key>
+      <PropertyRef Name="LAId" />
+    </Key>
+    <Property Name="LAId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="LetterArchiveId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="LAFilePAth" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="LetterType">
+    <Key>
+      <PropertyRef Name="LTId" />
+    </Key>
+    <Property Name="LTId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="LTName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="TYCode" Type="nvarchar" MaxLength="5" Nullable="false" />
+    <Property Name="LTDesc" Type="nvarchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="OfficeInfo">
+    <Key>
+      <PropertyRef Name="OfficeId" />
+    </Key>
+    <Property Name="OfficeId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="OfficeCode" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="OfficName" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="OfficeSN" Type="nvarchar" MaxLength="15" />
+    <Property Name="OAdd1" Type="nvarchar" MaxLength="40" />
+    <Property Name="OAdd2" Type="nvarchar" MaxLength="40" />
+    <Property Name="OAdd3" Type="nvarchar" MaxLength="40" />
+    <Property Name="DistrictId" Type="int" />
+    <Property Name="OTId" Type="int" Nullable="false" />
+    <Property Name="ParentOfficeId" Type="int" />
+    <Property Name="OPhoneNo" Type="nvarchar" MaxLength="50" />
+    <Property Name="OMobileNo" Type="nvarchar" MaxLength="50" />
+    <Property Name="OFaxNo" Type="nvarchar" MaxLength="50" />
+    <Property Name="Odesc" Type="nvarchar" MaxLength="300" />
+    <Property Name="OfficeIsActive" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="OfficeType">
+    <Key>
+      <PropertyRef Name="OTId" />
+    </Key>
+    <Property Name="OTId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="OTName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="OTCode" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="OTDesc" Type="nvarchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="OfficeTypeWiseDesignation">
+    <Key>
+      <PropertyRef Name="OTWDId" />
+    </Key>
+    <Property Name="OTWDId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="OTId" Type="int" Nullable="false" />
+    <Property Name="DId" Type="int" Nullable="false" />
+    <Property Name="OTWDIsActive" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="OrganizationInfo">
+    <Key>
+      <PropertyRef Name="OrgId" />
+    </Key>
+    <Property Name="OrgId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="OrgName" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="OrgMobileNo" Type="nvarchar" MaxLength="30" />
+    <Property Name="OrgTelephoneNo" Type="nvarchar" MaxLength="30" />
+    <Property Name="OrgEmail" Type="nvarchar" MaxLength="50" />
+    <Property Name="OrgAddressLine1" Type="nvarchar" MaxLength="100" />
+    <Property Name="OrgAddressLine2" Type="nvarchar" MaxLength="100" />
+    <Property Name="OrgAddressLine3" Type="nvarchar" MaxLength="100" />
+    <Property Name="OrgDesc" Type="nvarchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="OutsideLetterSend">
+    <Key>
+      <PropertyRef Name="OLSId" />
+    </Key>
+    <Property Name="OLSId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="LetterArchiveId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="OrgId" Type="int" Nullable="false" />
+    <Property Name="OLSDesc" Type="nvarchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="PersonalLetterRecivers">
+    <Key>
+      <PropertyRef Name="PLRId" />
+    </Key>
+    <Property Name="PLRId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="LetterArchiveId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="EmplyeeId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="PLRIsRead" Type="bit" Nullable="false" />
+    <Property Name="PLRReadDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="PostingInfo">
+    <Key>
+      <PropertyRef Name="PostingId" />
+    </Key>
+    <Property Name="PostingId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="EmplyeeId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="OfficeId" Type="int" Nullable="false" />
+    <Property Name="DesignationId" Type="int" Nullable="false" />
+    <Property Name="DepartmentID" Type="int" />
+    <Property Name="CellId" Type="int" />
+    <Property Name="SectionId" Type="int" />
+    <Property Name="JoiningDate" Type="datetime" Nullable="false" />
+    <Property Name="ReleaseDate" Type="datetime" />
+    <Property Name="JobStatusTypeId" Type="int" Nullable="false" />
+    <Property Name="PostingDesc" Type="nvarchar" MaxLength="200" />
+    <Property Name="ISAcrtivePosting" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Section">
+    <Key>
+      <PropertyRef Name="SectionId" />
+    </Key>
+    <Property Name="SectionId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SectionName" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="SectionCode" Type="nvarchar" MaxLength="5" Nullable="false" />
+    <Property Name="SectionDesc" Type="nvarchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="UserInfo">
+    <Key>
+      <PropertyRef Name="USId" />
+    </Key>
+    <Property Name="USId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="UserID" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="UserPassword" Type="nvarchar" MaxLength="40" Nullable="false" />
+    <Property Name="EmplyeeId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="UserTypeId" Type="int" Nullable="false" />
+    <Property Name="USERIsActive" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UserType">
+    <Key>
+      <PropertyRef Name="UTypeId" />
+    </Key>
+    <Property Name="UTypeId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UTypeName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="UTypeCode" Type="nvarchar" MaxLength="5" Nullable="false" />
+    <Property Name="UTypeDesc" Type="nvarchar" MaxLength="200" />
+  </EntityType>
+  <Association Name="FK_DistrictInfo_DivisionInfo">
+    <End Role="DivisionInfo" Type="Self.DivisionInfo" Multiplicity="1" />
+    <End Role="DistrictInfo" Type="Self.DistrictInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DivisionInfo">
+        <PropertyRef Name="DivisionId" />
+      </Principal>
+      <Dependent Role="DistrictInfo">
+        <PropertyRef Name="DivisionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EmplyeeBaiscInfo_DistrictInfo">
+    <End Role="DistrictInfo" Type="Self.DistrictInfo" Multiplicity="1" />
+    <End Role="EmplyeeBaiscInfo" Type="Self.EmplyeeBaiscInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DistrictInfo">
+        <PropertyRef Name="DisId" />
+      </Principal>
+      <Dependent Role="EmplyeeBaiscInfo">
+        <PropertyRef Name="HomeDistrict" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_InsideOfficialRecivers_Designation">
+    <End Role="Designation" Type="Self.Designation" Multiplicity="1" />
+    <End Role="InsideOfficialRecivers" Type="Self.InsideOfficialRecivers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Designation">
+        <PropertyRef Name="DId" />
+      </Principal>
+      <Dependent Role="InsideOfficialRecivers">
+        <PropertyRef Name="DId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_InsideOfficialRecivers_LetterArchive">
+    <End Role="LetterArchive" Type="Self.LetterArchive" Multiplicity="1" />
+    <End Role="InsideOfficialRecivers" Type="Self.InsideOfficialRecivers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LetterArchive">
+        <PropertyRef Name="LetterArchiveId" />
+      </Principal>
+      <Dependent Role="InsideOfficialRecivers">
+        <PropertyRef Name="LetterArchiveId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_InsideOfficialRecivers_OfficeInfo">
+    <End Role="OfficeInfo" Type="Self.OfficeInfo" Multiplicity="1" />
+    <End Role="InsideOfficialRecivers" Type="Self.InsideOfficialRecivers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OfficeInfo">
+        <PropertyRef Name="OfficeId" />
+      </Principal>
+      <Dependent Role="InsideOfficialRecivers">
+        <PropertyRef Name="OfficeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LetterArchive_Designation">
+    <End Role="Designation" Type="Self.Designation" Multiplicity="1" />
+    <End Role="LetterArchive" Type="Self.LetterArchive" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Designation">
+        <PropertyRef Name="DId" />
+      </Principal>
+      <Dependent Role="LetterArchive">
+        <PropertyRef Name="CreatorDesignationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LetterArchive_EmplyeeBaiscInfo">
+    <End Role="EmplyeeBaiscInfo" Type="Self.EmplyeeBaiscInfo" Multiplicity="1" />
+    <End Role="LetterArchive" Type="Self.LetterArchive" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EmplyeeBaiscInfo">
+        <PropertyRef Name="EmplyeeId" />
+      </Principal>
+      <Dependent Role="LetterArchive">
+        <PropertyRef Name="CeatorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LetterArchive_LetterType">
+    <End Role="LetterType" Type="Self.LetterType" Multiplicity="1" />
+    <End Role="LetterArchive" Type="Self.LetterArchive" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LetterType">
+        <PropertyRef Name="LTId" />
+      </Principal>
+      <Dependent Role="LetterArchive">
+        <PropertyRef Name="LetterTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LetterArchive_OfficeInfo">
+    <End Role="OfficeInfo" Type="Self.OfficeInfo" Multiplicity="1" />
+    <End Role="LetterArchive" Type="Self.LetterArchive" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OfficeInfo">
+        <PropertyRef Name="OfficeId" />
+      </Principal>
+      <Dependent Role="LetterArchive">
+        <PropertyRef Name="CreatorOfficeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LetterAttachments_LetterArchive">
+    <End Role="LetterArchive" Type="Self.LetterArchive" Multiplicity="1" />
+    <End Role="LetterAttachments" Type="Self.LetterAttachments" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LetterArchive">
+        <PropertyRef Name="LetterArchiveId" />
+      </Principal>
+      <Dependent Role="LetterAttachments">
+        <PropertyRef Name="LetterArchiveId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OfficeInfo_DistrictInfo">
+    <End Role="DistrictInfo" Type="Self.DistrictInfo" Multiplicity="0..1" />
+    <End Role="OfficeInfo" Type="Self.OfficeInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DistrictInfo">
+        <PropertyRef Name="DisId" />
+      </Principal>
+      <Dependent Role="OfficeInfo">
+        <PropertyRef Name="DistrictId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OfficeInfo_OfficeType">
+    <End Role="OfficeType" Type="Self.OfficeType" Multiplicity="1" />
+    <End Role="OfficeInfo" Type="Self.OfficeInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OfficeType">
+        <PropertyRef Name="OTId" />
+      </Principal>
+      <Dependent Role="OfficeInfo">
+        <PropertyRef Name="OTId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OfficeTypeWiseDesignation_Designation">
+    <End Role="Designation" Type="Self.Designation" Multiplicity="1" />
+    <End Role="OfficeTypeWiseDesignation" Type="Self.OfficeTypeWiseDesignation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Designation">
+        <PropertyRef Name="DId" />
+      </Principal>
+      <Dependent Role="OfficeTypeWiseDesignation">
+        <PropertyRef Name="DId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OfficeTypeWiseDesignation_OfficeType">
+    <End Role="OfficeType" Type="Self.OfficeType" Multiplicity="1" />
+    <End Role="OfficeTypeWiseDesignation" Type="Self.OfficeTypeWiseDesignation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OfficeType">
+        <PropertyRef Name="OTId" />
+      </Principal>
+      <Dependent Role="OfficeTypeWiseDesignation">
+        <PropertyRef Name="OTId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OutsideLetterSend_LetterArchive">
+    <End Role="LetterArchive" Type="Self.LetterArchive" Multiplicity="1" />
+    <End Role="OutsideLetterSend" Type="Self.OutsideLetterSend" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LetterArchive">
+        <PropertyRef Name="LetterArchiveId" />
+      </Principal>
+      <Dependent Role="OutsideLetterSend">
+        <PropertyRef Name="LetterArchiveId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OutsideLetterSend_OrganizationInfo">
+    <End Role="OrganizationInfo" Type="Self.OrganizationInfo" Multiplicity="1" />
+    <End Role="OutsideLetterSend" Type="Self.OutsideLetterSend" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OrganizationInfo">
+        <PropertyRef Name="OrgId" />
+      </Principal>
+      <Dependent Role="OutsideLetterSend">
+        <PropertyRef Name="OrgId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PersonalLetterRecivers_EmplyeeBaiscInfo">
+    <End Role="EmplyeeBaiscInfo" Type="Self.EmplyeeBaiscInfo" Multiplicity="1" />
+    <End Role="PersonalLetterRecivers" Type="Self.PersonalLetterRecivers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EmplyeeBaiscInfo">
+        <PropertyRef Name="EmplyeeId" />
+      </Principal>
+      <Dependent Role="PersonalLetterRecivers">
+        <PropertyRef Name="EmplyeeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PersonalLetterRecivers_LetterArchive">
+    <End Role="LetterArchive" Type="Self.LetterArchive" Multiplicity="1" />
+    <End Role="PersonalLetterRecivers" Type="Self.PersonalLetterRecivers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LetterArchive">
+        <PropertyRef Name="LetterArchiveId" />
+      </Principal>
+      <Dependent Role="PersonalLetterRecivers">
+        <PropertyRef Name="LetterArchiveId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PostingInfo_Cell">
+    <End Role="Cell" Type="Self.Cell" Multiplicity="0..1" />
+    <End Role="PostingInfo" Type="Self.PostingInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cell">
+        <PropertyRef Name="CellId" />
+      </Principal>
+      <Dependent Role="PostingInfo">
+        <PropertyRef Name="CellId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PostingInfo_Depatrment">
+    <End Role="Depatrment" Type="Self.Depatrment" Multiplicity="0..1" />
+    <End Role="PostingInfo" Type="Self.PostingInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Depatrment">
+        <PropertyRef Name="DepartmentID" />
+      </Principal>
+      <Dependent Role="PostingInfo">
+        <PropertyRef Name="DepartmentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PostingInfo_Designation">
+    <End Role="Designation" Type="Self.Designation" Multiplicity="1" />
+    <End Role="PostingInfo" Type="Self.PostingInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Designation">
+        <PropertyRef Name="DId" />
+      </Principal>
+      <Dependent Role="PostingInfo">
+        <PropertyRef Name="DesignationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PostingInfo_EmplyeeBaiscInfo">
+    <End Role="EmplyeeBaiscInfo" Type="Self.EmplyeeBaiscInfo" Multiplicity="1" />
+    <End Role="PostingInfo" Type="Self.PostingInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EmplyeeBaiscInfo">
+        <PropertyRef Name="EmplyeeId" />
+      </Principal>
+      <Dependent Role="PostingInfo">
+        <PropertyRef Name="EmplyeeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PostingInfo_JobStatusType">
+    <End Role="JobStatusType" Type="Self.JobStatusType" Multiplicity="1" />
+    <End Role="PostingInfo" Type="Self.PostingInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="JobStatusType">
+        <PropertyRef Name="JSTId" />
+      </Principal>
+      <Dependent Role="PostingInfo">
+        <PropertyRef Name="JobStatusTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PostingInfo_OfficeInfo">
+    <End Role="OfficeInfo" Type="Self.OfficeInfo" Multiplicity="1" />
+    <End Role="PostingInfo" Type="Self.PostingInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OfficeInfo">
+        <PropertyRef Name="OfficeId" />
+      </Principal>
+      <Dependent Role="PostingInfo">
+        <PropertyRef Name="OfficeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PostingInfo_Section">
+    <End Role="Section" Type="Self.Section" Multiplicity="0..1" />
+    <End Role="PostingInfo" Type="Self.PostingInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Section">
+        <PropertyRef Name="SectionId" />
+      </Principal>
+      <Dependent Role="PostingInfo">
+        <PropertyRef Name="SectionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserInfo_EmplyeeBaiscInfo">
+    <End Role="EmplyeeBaiscInfo" Type="Self.EmplyeeBaiscInfo" Multiplicity="1" />
+    <End Role="UserInfo" Type="Self.UserInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EmplyeeBaiscInfo">
+        <PropertyRef Name="EmplyeeId" />
+      </Principal>
+      <Dependent Role="UserInfo">
+        <PropertyRef Name="EmplyeeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserInfo_UserType">
+    <End Role="UserType" Type="Self.UserType" Multiplicity="1" />
+    <End Role="UserInfo" Type="Self.UserInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserType">
+        <PropertyRef Name="UTypeId" />
+      </Principal>
+      <Dependent Role="UserInfo">
+        <PropertyRef Name="UserTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="PLOLAMSModelStoreContainer">
+    <EntitySet Name="Cell" EntityType="Self.Cell" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Depatrment" EntityType="Self.Depatrment" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Designation" EntityType="Self.Designation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DistrictInfo" EntityType="Self.DistrictInfo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DivisionInfo" EntityType="Self.DivisionInfo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EmplyeeBaiscInfo" EntityType="Self.EmplyeeBaiscInfo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="InsideOfficialRecivers" EntityType="Self.InsideOfficialRecivers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="JobStatusType" EntityType="Self.JobStatusType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="LetterArchive" EntityType="Self.LetterArchive" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="LetterAttachments" EntityType="Self.LetterAttachments" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="LetterType" EntityType="Self.LetterType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OfficeInfo" EntityType="Self.OfficeInfo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OfficeType" EntityType="Self.OfficeType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OfficeTypeWiseDesignation" EntityType="Self.OfficeTypeWiseDesignation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OrganizationInfo" EntityType="Self.OrganizationInfo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OutsideLetterSend" EntityType="Self.OutsideLetterSend" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PersonalLetterRecivers" EntityType="Self.PersonalLetterRecivers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PostingInfo" EntityType="Self.PostingInfo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Section" EntityType="Self.Section" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UserInfo" EntityType="Self.UserInfo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UserType" EntityType="Self.UserType" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_DistrictInfo_DivisionInfo" Association="Self.FK_DistrictInfo_DivisionInfo">
+      <End Role="DivisionInfo" EntitySet="DivisionInfo" />
+      <End Role="DistrictInfo" EntitySet="DistrictInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EmplyeeBaiscInfo_DistrictInfo" Association="Self.FK_EmplyeeBaiscInfo_DistrictInfo">
+      <End Role="DistrictInfo" EntitySet="DistrictInfo" />
+      <End Role="EmplyeeBaiscInfo" EntitySet="EmplyeeBaiscInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_InsideOfficialRecivers_Designation" Association="Self.FK_InsideOfficialRecivers_Designation">
+      <End Role="Designation" EntitySet="Designation" />
+      <End Role="InsideOfficialRecivers" EntitySet="InsideOfficialRecivers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_InsideOfficialRecivers_LetterArchive" Association="Self.FK_InsideOfficialRecivers_LetterArchive">
+      <End Role="LetterArchive" EntitySet="LetterArchive" />
+      <End Role="InsideOfficialRecivers" EntitySet="InsideOfficialRecivers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_InsideOfficialRecivers_OfficeInfo" Association="Self.FK_InsideOfficialRecivers_OfficeInfo">
+      <End Role="OfficeInfo" EntitySet="OfficeInfo" />
+      <End Role="InsideOfficialRecivers" EntitySet="InsideOfficialRecivers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LetterArchive_Designation" Association="Self.FK_LetterArchive_Designation">
+      <End Role="Designation" EntitySet="Designation" />
+      <End Role="LetterArchive" EntitySet="LetterArchive" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LetterArchive_EmplyeeBaiscInfo" Association="Self.FK_LetterArchive_EmplyeeBaiscInfo">
+      <End Role="EmplyeeBaiscInfo" EntitySet="EmplyeeBaiscInfo" />
+      <End Role="LetterArchive" EntitySet="LetterArchive" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LetterArchive_LetterType" Association="Self.FK_LetterArchive_LetterType">
+      <End Role="LetterType" EntitySet="LetterType" />
+      <End Role="LetterArchive" EntitySet="LetterArchive" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LetterArchive_OfficeInfo" Association="Self.FK_LetterArchive_OfficeInfo">
+      <End Role="OfficeInfo" EntitySet="OfficeInfo" />
+      <End Role="LetterArchive" EntitySet="LetterArchive" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LetterAttachments_LetterArchive" Association="Self.FK_LetterAttachments_LetterArchive">
+      <End Role="LetterArchive" EntitySet="LetterArchive" />
+      <End Role="LetterAttachments" EntitySet="LetterAttachments" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OfficeInfo_DistrictInfo" Association="Self.FK_OfficeInfo_DistrictInfo">
+      <End Role="DistrictInfo" EntitySet="DistrictInfo" />
+      <End Role="OfficeInfo" EntitySet="OfficeInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OfficeInfo_OfficeType" Association="Self.FK_OfficeInfo_OfficeType">
+      <End Role="OfficeType" EntitySet="OfficeType" />
+      <End Role="OfficeInfo" EntitySet="OfficeInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OfficeTypeWiseDesignation_Designation" Association="Self.FK_OfficeTypeWiseDesignation_Designation">
+      <End Role="Designation" EntitySet="Designation" />
+      <End Role="OfficeTypeWiseDesignation" EntitySet="OfficeTypeWiseDesignation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OfficeTypeWiseDesignation_OfficeType" Association="Self.FK_OfficeTypeWiseDesignation_OfficeType">
+      <End Role="OfficeType" EntitySet="OfficeType" />
+      <End Role="OfficeTypeWiseDesignation" EntitySet="OfficeTypeWiseDesignation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OutsideLetterSend_LetterArchive" Association="Self.FK_OutsideLetterSend_LetterArchive">
+      <End Role="LetterArchive" EntitySet="LetterArchive" />
+      <End Role="OutsideLetterSend" EntitySet="OutsideLetterSend" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OutsideLetterSend_OrganizationInfo" Association="Self.FK_OutsideLetterSend_OrganizationInfo">
+      <End Role="OrganizationInfo" EntitySet="OrganizationInfo" />
+      <End Role="OutsideLetterSend" EntitySet="OutsideLetterSend" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PersonalLetterRecivers_EmplyeeBaiscInfo" Association="Self.FK_PersonalLetterRecivers_EmplyeeBaiscInfo">
+      <End Role="EmplyeeBaiscInfo" EntitySet="EmplyeeBaiscInfo" />
+      <End Role="PersonalLetterRecivers" EntitySet="PersonalLetterRecivers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PersonalLetterRecivers_LetterArchive" Association="Self.FK_PersonalLetterRecivers_LetterArchive">
+      <End Role="LetterArchive" EntitySet="LetterArchive" />
+      <End Role="PersonalLetterRecivers" EntitySet="PersonalLetterRecivers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PostingInfo_Cell" Association="Self.FK_PostingInfo_Cell">
+      <End Role="Cell" EntitySet="Cell" />
+      <End Role="PostingInfo" EntitySet="PostingInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PostingInfo_Depatrment" Association="Self.FK_PostingInfo_Depatrment">
+      <End Role="Depatrment" EntitySet="Depatrment" />
+      <End Role="PostingInfo" EntitySet="PostingInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PostingInfo_Designation" Association="Self.FK_PostingInfo_Designation">
+      <End Role="Designation" EntitySet="Designation" />
+      <End Role="PostingInfo" EntitySet="PostingInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PostingInfo_EmplyeeBaiscInfo" Association="Self.FK_PostingInfo_EmplyeeBaiscInfo">
+      <End Role="EmplyeeBaiscInfo" EntitySet="EmplyeeBaiscInfo" />
+      <End Role="PostingInfo" EntitySet="PostingInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PostingInfo_JobStatusType" Association="Self.FK_PostingInfo_JobStatusType">
+      <End Role="JobStatusType" EntitySet="JobStatusType" />
+      <End Role="PostingInfo" EntitySet="PostingInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PostingInfo_OfficeInfo" Association="Self.FK_PostingInfo_OfficeInfo">
+      <End Role="OfficeInfo" EntitySet="OfficeInfo" />
+      <End Role="PostingInfo" EntitySet="PostingInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PostingInfo_Section" Association="Self.FK_PostingInfo_Section">
+      <End Role="Section" EntitySet="Section" />
+      <End Role="PostingInfo" EntitySet="PostingInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserInfo_EmplyeeBaiscInfo" Association="Self.FK_UserInfo_EmplyeeBaiscInfo">
+      <End Role="EmplyeeBaiscInfo" EntitySet="EmplyeeBaiscInfo" />
+      <End Role="UserInfo" EntitySet="UserInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserInfo_UserType" Association="Self.FK_UserInfo_UserType">
+      <End Role="UserType" EntitySet="UserType" />
+      <End Role="UserInfo" EntitySet="UserInfo" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

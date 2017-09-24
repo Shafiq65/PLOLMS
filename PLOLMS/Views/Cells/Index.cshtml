@@ -1,0 +1,46 @@
+﻿@model IEnumerable<PLOLMS.Models.Cell>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.CellName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CellCode)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CellDesc)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.CellName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CellCode)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CellDesc)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.CellId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.CellId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.CellId })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PLOLAMSModelStoreContainer" CdmEntityContainer="PLOLAMSEntities">
+    <EntitySetMapping Name="Cells">
+      <EntityTypeMapping TypeName="PLOLAMSModel.Cell">
+        <MappingFragment StoreEntitySet="Cell">
+          <ScalarProperty Name="CellId" ColumnName="CellId" />
+          <ScalarProperty Name="CellName" ColumnName="CellName" />
+          <ScalarProperty Name="CellCode" ColumnName="CellCode" />
+          <ScalarProperty Name="CellDesc" ColumnName="CellDesc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Depatrments">
+      <EntityTypeMapping TypeName="PLOLAMSModel.Depatrment">
+        <MappingFragment StoreEntitySet="Depatrment">
+          <ScalarProperty Name="DepartmentID" ColumnName="DepartmentID" />
+          <ScalarProperty Name="DepartmentName" ColumnName="DepartmentName" />
+          <ScalarProperty Name="DepartmentCode" ColumnName="DepartmentCode" />
+          <ScalarProperty Name="DepartmentDesc" ColumnName="DepartmentDesc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Designations">
+      <EntityTypeMapping TypeName="PLOLAMSModel.Designation">
+        <MappingFragment StoreEntitySet="Designation">
+          <ScalarProperty Name="DId" ColumnName="DId" />
+          <ScalarProperty Name="Dname" ColumnName="Dname" />
+          <ScalarProperty Name="DesignationCode" ColumnName="DesignationCode" />
+          <ScalarProperty Name="DDesc" ColumnName="DDesc" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DistrictInfoes">
+      <EntityTypeMapping TypeName="PLOLAMSModel.DistrictInfo">
+        <MappingFragment StoreEntitySet="DistrictInfo">
+          <ScalarProperty Name="DisId" ColumnName="DisId" />
+          <ScalarProperty Name="DivisionId" ColumnName="DivisionId" />
+          <ScalarProperty Name="DisName" ColumnName="DisName" />
+          <ScalarProperty Name="DisCode" ColumnName="DisCode" />
+          <ScalarProperty Name="DisDesc" ColumnName="DisDesc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DivisionInfoes">
+      <EntityTypeMapping TypeName="PLOLAMSModel.DivisionInfo">
+        <MappingFragment StoreEntitySet="DivisionInfo">
+          <ScalarProperty Name="DivisionId" ColumnName="DivisionId" />
+          <ScalarProperty Name="DivisionName" ColumnName="DivisionName" />
+          <ScalarProperty Name="DivisionCode" ColumnName="DivisionCode" />
+          <ScalarProperty Name="DivisionDesc" ColumnName="DivisionDesc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EmplyeeBaiscInfoes">
+      <EntityTypeMapping TypeName="PLOLAMSModel.EmplyeeBaiscInfo">
+        <MappingFragment StoreEntitySet="EmplyeeBaiscInfo">
+          <ScalarProperty Name="EmplyeeId" ColumnName="EmplyeeId" />
+          <ScalarProperty Name="EmplyeeCode" ColumnName="EmplyeeCode" />
+          <ScalarProperty Name="EmployeeName" ColumnName="EmployeeName" />
+          <ScalarProperty Name="EmployeeShortName" ColumnName="EmployeeShortName" />
+          <ScalarProperty Name="GenderId" ColumnName="GenderId" />
+          <ScalarProperty Name="FatherName" ColumnName="FatherName" />
+          <ScalarProperty Name="MotherName" ColumnName="MotherName" />
+          <ScalarProperty Name="HomeDistrict" ColumnName="HomeDistrict" />
+          <ScalarProperty Name="ParmanentAddress" ColumnName="ParmanentAddress" />
+          <ScalarProperty Name="PresentAddress" ColumnName="PresentAddress" />
+          <ScalarProperty Name="DateOfBirth" ColumnName="DateOfBirth" />
+          <ScalarProperty Name="EmpMobileNo" ColumnName="EmpMobileNo" />
+          <ScalarProperty Name="EmpEmailAddress" ColumnName="EmpEmailAddress" />
+          <ScalarProperty Name="EmployeeImage" ColumnName="EmployeeImage" />
+          <ScalarProperty Name="JoiningDate" ColumnName="JoiningDate" />
+          <ScalarProperty Name="IsActiveEmp" ColumnName="IsActiveEmp" />
+          <ScalarProperty Name="CreatorId" ColumnName="CreatorId" />
+          <ScalarProperty Name="CreateDatetime" ColumnName="CreateDatetime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InsideOfficialRecivers">
+      <EntityTypeMapping TypeName="PLOLAMSModel.InsideOfficialReciver">
+        <MappingFragment StoreEntitySet="InsideOfficialRecivers">
+          <ScalarProperty Name="IORId" ColumnName="IORId" />
+          <ScalarProperty Name="LetterArchiveId" ColumnName="LetterArchiveId" />
+          <ScalarProperty Name="DId" ColumnName="DId" />
+          <ScalarProperty Name="OfficeId" ColumnName="OfficeId" />
+          <ScalarProperty Name="IORIsRead" ColumnName="IORIsRead" />
+          <ScalarProperty Name="IORREadDate" ColumnName="IORREadDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="JobStatusTypes">
+      <EntityTypeMapping TypeName="PLOLAMSModel.JobStatusType">
+        <MappingFragment StoreEntitySet="JobStatusType">
+          <ScalarProperty Name="JSTId" ColumnName="JSTId" />
+          <ScalarProperty Name="JSTName" ColumnName="JSTName" />
+          <ScalarProperty Name="JSCode" ColumnName="JSCode" />
+          <ScalarProperty Name="JSTDesc" ColumnName="JSTDesc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LetterArchives">
+      <EntityTypeMapping TypeName="PLOLAMSModel.LetterArchive">
+        <MappingFragment StoreEntitySet="LetterArchive">
+          <ScalarProperty Name="LetterArchiveId" ColumnName="LetterArchiveId" />
+          <ScalarProperty Name="LetterName" ColumnName="LetterName" />
+          <ScalarProperty Name="LetterReferanceNo" ColumnName="LetterReferanceNo" />
+          <ScalarProperty Name="LetterTypeId" ColumnName="LetterTypeId" />
+          <ScalarProperty Name="LetterSubject" ColumnName="LetterSubject" />
+          <ScalarProperty Name="LetterDate" ColumnName="LetterDate" />
+          <ScalarProperty Name="CeatorId" ColumnName="CeatorId" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatorDesignationId" ColumnName="CreatorDesignationId" />
+          <ScalarProperty Name="CreatorOfficeId" ColumnName="CreatorOfficeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LetterAttachments">
+      <EntityTypeMapping TypeName="PLOLAMSModel.LetterAttachment">
+        <MappingFragment StoreEntitySet="LetterAttachments">
+          <ScalarProperty Name="LAId" ColumnName="LAId" />
+          <ScalarProperty Name="LetterArchiveId" ColumnName="LetterArchiveId" />
+          <ScalarProperty Name="LAFilePAth" ColumnName="LAFilePAth" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LetterTypes">
+      <EntityTypeMapping TypeName="PLOLAMSModel.LetterType">
+        <MappingFragment StoreEntitySet="LetterType">
+          <ScalarProperty Name="LTId" ColumnName="LTId" />
+          <ScalarProperty Name="LTName" ColumnName="LTName" />
+          <ScalarProperty Name="TYCode" ColumnName="TYCode" />
+          <ScalarProperty Name="LTDesc" ColumnName="LTDesc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OfficeInfoes">
+      <EntityTypeMapping TypeName="PLOLAMSModel.OfficeInfo">
+        <MappingFragment StoreEntitySet="OfficeInfo">
+          <ScalarProperty Name="ParentOfficeId" ColumnName="ParentOfficeId" />
+          <ScalarProperty Name="OfficeId" ColumnName="OfficeId" />
+          <ScalarProperty Name="OfficeCode" ColumnName="OfficeCode" />
+          <ScalarProperty Name="OfficName" ColumnName="OfficName" />
+          <ScalarProperty Name="OfficeSN" ColumnName="OfficeSN" />
+          <ScalarProperty Name="OAdd1" ColumnName="OAdd1" />
+          <ScalarProperty Name="OAdd2" ColumnName="OAdd2" />
+          <ScalarProperty Name="OAdd3" ColumnName="OAdd3" />
+          <ScalarProperty Name="DistrictId" ColumnName="DistrictId" />
+          <ScalarProperty Name="OTId" ColumnName="OTId" />
+          <ScalarProperty Name="OPhoneNo" ColumnName="OPhoneNo" />
+          <ScalarProperty Name="OMobileNo" ColumnName="OMobileNo" />
+          <ScalarProperty Name="OFaxNo" ColumnName="OFaxNo" />
+          <ScalarProperty Name="Odesc" ColumnName="Odesc" />
+          <ScalarProperty Name="OfficeIsActive" ColumnName="OfficeIsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OfficeTypes">
+      <EntityTypeMapping TypeName="PLOLAMSModel.OfficeType">
+        <MappingFragment StoreEntitySet="OfficeType">
+          <ScalarProperty Name="OTId" ColumnName="OTId" />
+          <ScalarProperty Name="OTName" ColumnName="OTName" />
+          <ScalarProperty Name="OTCode" ColumnName="OTCode" />
+          <ScalarProperty Name="OTDesc" ColumnName="OTDesc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrganizationInfoes">
+      <EntityTypeMapping TypeName="PLOLAMSModel.OrganizationInfo">
+        <MappingFragment StoreEntitySet="OrganizationInfo">
+          <ScalarProperty Name="OrgId" ColumnName="OrgId" />
+          <ScalarProperty Name="OrgName" ColumnName="OrgName" />
+          <ScalarProperty Name="OrgMobileNo" ColumnName="OrgMobileNo" />
+          <ScalarProperty Name="OrgTelephoneNo" ColumnName="OrgTelephoneNo" />
+          <ScalarProperty Name="OrgEmail" ColumnName="OrgEmail" />
+          <ScalarProperty Name="OrgAddressLine1" ColumnName="OrgAddressLine1" />
+          <ScalarProperty Name="OrgAddressLine2" ColumnName="OrgAddressLine2" />
+          <ScalarProperty Name="OrgAddressLine3" ColumnName="OrgAddressLine3" />
+          <ScalarProperty Name="OrgDesc" ColumnName="OrgDesc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OutsideLetterSends">
+      <EntityTypeMapping TypeName="PLOLAMSModel.OutsideLetterSend">
+        <MappingFragment StoreEntitySet="OutsideLetterSend">
+          <ScalarProperty Name="OLSId" ColumnName="OLSId" />
+          <ScalarProperty Name="LetterArchiveId" ColumnName="LetterArchiveId" />
+          <ScalarProperty Name="OrgId" ColumnName="OrgId" />
+          <ScalarProperty Name="OLSDesc" ColumnName="OLSDesc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PostingInfoes">
+      <EntityTypeMapping TypeName="PLOLAMSModel.PostingInfo">
+        <MappingFragment StoreEntitySet="PostingInfo">
+          <ScalarProperty Name="PostingId" ColumnName="PostingId" />
+          <ScalarProperty Name="EmplyeeId" ColumnName="EmplyeeId" />
+          <ScalarProperty Name="OfficeId" ColumnName="OfficeId" />
+          <ScalarProperty Name="DesignationId" ColumnName="DesignationId" />
+          <ScalarProperty Name="DepartmentID" ColumnName="DepartmentID" />
+          <ScalarProperty Name="CellId" ColumnName="CellId" />
+          <ScalarProperty Name="SectionId" ColumnName="SectionId" />
+          <ScalarProperty Name="JoiningDate" ColumnName="JoiningDate" />
+          <ScalarProperty Name="ReleaseDate" ColumnName="ReleaseDate" />
+          <ScalarProperty Name="JobStatusTypeId" ColumnName="JobStatusTypeId" />
+          <ScalarProperty Name="PostingDesc" ColumnName="PostingDesc" />
+          <ScalarProperty Name="ISAcrtivePosting" ColumnName="ISAcrtivePosting" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sections">
+      <EntityTypeMapping TypeName="PLOLAMSModel.Section">
+        <MappingFragment StoreEntitySet="Section">
+          <ScalarProperty Name="SectionId" ColumnName="SectionId" />
+          <ScalarProperty Name="SectionName" ColumnName="SectionName" />
+          <ScalarProperty Name="SectionCode" ColumnName="SectionCode" />
+          <ScalarProperty Name="SectionDesc" ColumnName="SectionDesc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserInfoes">
+      <EntityTypeMapping TypeName="PLOLAMSModel.UserInfo">
+        <MappingFragment StoreEntitySet="UserInfo">
+          <ScalarProperty Name="USId" ColumnName="USId" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="UserPassword" ColumnName="UserPassword" />
+          <ScalarProperty Name="EmplyeeId" ColumnName="EmplyeeId" />
+          <ScalarProperty Name="UserTypeId" ColumnName="UserTypeId" />
+          <ScalarProperty Name="USERIsActive" ColumnName="USERIsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserTypes">
+      <EntityTypeMapping TypeName="PLOLAMSModel.UserType">
+        <MappingFragment StoreEntitySet="UserType">
+          <ScalarProperty Name="UTypeId" ColumnName="UTypeId" />
+          <ScalarProperty Name="UTypeName" ColumnName="UTypeName" />
+          <ScalarProperty Name="UTypeCode" ColumnName="UTypeCode" />
+          <ScalarProperty Name="UTypeDesc" ColumnName="UTypeDesc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OfficeTypeWiseDesignations">
+      <EntityTypeMapping TypeName="PLOLAMSModel.OfficeTypeWiseDesignation">
+        <MappingFragment StoreEntitySet="OfficeTypeWiseDesignation">
+          <ScalarProperty Name="OTWDIsActive" ColumnName="OTWDIsActive" />
+          <ScalarProperty Name="DId" ColumnName="DId" />
+          <ScalarProperty Name="OTId" ColumnName="OTId" />
+          <ScalarProperty Name="OTWDId" ColumnName="OTWDId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PersonalLetterRecivers">
+      <EntityTypeMapping TypeName="PLOLAMSModel.PersonalLetterReciver">
+        <MappingFragment StoreEntitySet="PersonalLetterRecivers">
+          <ScalarProperty Name="PLRReadDate" ColumnName="PLRReadDate" />
+          <ScalarProperty Name="PLRIsRead" ColumnName="PLRIsRead" />
+          <ScalarProperty Name="EmplyeeId" ColumnName="EmplyeeId" />
+          <ScalarProperty Name="LetterArchiveId" ColumnName="LetterArchiveId" />
+          <ScalarProperty Name="PLRId" ColumnName="PLRId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

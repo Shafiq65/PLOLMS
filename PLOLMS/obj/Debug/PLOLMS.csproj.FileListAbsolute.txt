@@ -1,0 +1,163 @@
+D:\Projects\PLOLMS\PLOLMS\bin\ApplicationInsights.config
+D:\Projects\PLOLMS\PLOLMS\bin\roslyn\csc.exe
+D:\Projects\PLOLMS\PLOLMS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Projects\PLOLMS\PLOLMS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Projects\PLOLMS\PLOLMS\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Projects\PLOLMS\PLOLMS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Projects\PLOLMS\PLOLMS\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Projects\PLOLMS\PLOLMS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Projects\PLOLMS\PLOLMS\bin\roslyn\System.Collections.Immutable.dll
+D:\Projects\PLOLMS\PLOLMS\bin\roslyn\System.Reflection.Metadata.dll
+D:\Projects\PLOLMS\PLOLMS\bin\roslyn\vbc.exe
+D:\Projects\PLOLMS\PLOLMS\bin\roslyn\VBCSCompiler.exe
+D:\Projects\PLOLMS\PLOLMS\bin\roslyn\VBCSCompiler.exe.config
+D:\Projects\PLOLMS\PLOLMS\bin\PLOLMS.dll.config
+D:\Projects\PLOLMS\PLOLMS\bin\PLOLMS.dll
+D:\Projects\PLOLMS\PLOLMS\bin\PLOLMS.pdb
+D:\Projects\PLOLMS\PLOLMS\bin\Antlr3.Runtime.dll
+D:\Projects\PLOLMS\PLOLMS\bin\EntityFramework.dll
+D:\Projects\PLOLMS\PLOLMS\bin\EntityFramework.SqlServer.dll
+D:\Projects\PLOLMS\PLOLMS\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Projects\PLOLMS\PLOLMS\bin\Microsoft.AI.DependencyCollector.dll
+D:\Projects\PLOLMS\PLOLMS\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Projects\PLOLMS\PLOLMS\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Projects\PLOLMS\PLOLMS\bin\Microsoft.AI.Web.dll
+D:\Projects\PLOLMS\PLOLMS\bin\Microsoft.AI.WindowsServer.dll
+D:\Projects\PLOLMS\PLOLMS\bin\Microsoft.ApplicationInsights.dll
+D:\Projects\PLOLMS\PLOLMS\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Projects\PLOLMS\PLOLMS\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Projects\PLOLMS\PLOLMS\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Projects\PLOLMS\PLOLMS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Projects\PLOLMS\PLOLMS\bin\Microsoft.Owin.dll
+D:\Projects\PLOLMS\PLOLMS\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Projects\PLOLMS\PLOLMS\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Projects\PLOLMS\PLOLMS\bin\Microsoft.Owin.Security.dll
+D:\Projects\PLOLMS\PLOLMS\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Projects\PLOLMS\PLOLMS\bin\Microsoft.Owin.Security.Google.dll
+D:\Projects\PLOLMS\PLOLMS\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Projects\PLOLMS\PLOLMS\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Projects\PLOLMS\PLOLMS\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Projects\PLOLMS\PLOLMS\bin\Microsoft.Web.Infrastructure.dll
+D:\Projects\PLOLMS\PLOLMS\bin\Newtonsoft.Json.dll
+D:\Projects\PLOLMS\PLOLMS\bin\Owin.dll
+D:\Projects\PLOLMS\PLOLMS\bin\System.Web.Helpers.dll
+D:\Projects\PLOLMS\PLOLMS\bin\System.Web.Mvc.dll
+D:\Projects\PLOLMS\PLOLMS\bin\System.Web.Optimization.dll
+D:\Projects\PLOLMS\PLOLMS\bin\System.Web.Razor.dll
+D:\Projects\PLOLMS\PLOLMS\bin\System.Web.WebPages.Deployment.dll
+D:\Projects\PLOLMS\PLOLMS\bin\System.Web.WebPages.dll
+D:\Projects\PLOLMS\PLOLMS\bin\System.Web.WebPages.Razor.dll
+D:\Projects\PLOLMS\PLOLMS\bin\WebGrease.dll
+D:\Projects\PLOLMS\PLOLMS\bin\Microsoft.AI.DependencyCollector.xml
+D:\Projects\PLOLMS\PLOLMS\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Projects\PLOLMS\PLOLMS\bin\Microsoft.AI.Web.xml
+D:\Projects\PLOLMS\PLOLMS\bin\Microsoft.AI.WindowsServer.xml
+D:\Projects\PLOLMS\PLOLMS\bin\Microsoft.ApplicationInsights.xml
+D:\Projects\PLOLMS\PLOLMS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Projects\PLOLMS\PLOLMS\bin\System.Web.Helpers.xml
+D:\Projects\PLOLMS\PLOLMS\bin\System.Web.Mvc.xml
+D:\Projects\PLOLMS\PLOLMS\bin\System.Web.Optimization.xml
+D:\Projects\PLOLMS\PLOLMS\bin\System.Web.Razor.xml
+D:\Projects\PLOLMS\PLOLMS\bin\System.Web.WebPages.xml
+D:\Projects\PLOLMS\PLOLMS\bin\System.Web.WebPages.Deployment.xml
+D:\Projects\PLOLMS\PLOLMS\bin\System.Web.WebPages.Razor.xml
+D:\Projects\PLOLMS\PLOLMS\bin\Antlr3.Runtime.pdb
+D:\Projects\PLOLMS\PLOLMS\bin\Newtonsoft.Json.xml
+D:\Projects\PLOLMS\PLOLMS\bin\EntityFramework.xml
+D:\Projects\PLOLMS\PLOLMS\bin\EntityFramework.SqlServer.xml
+D:\Projects\PLOLMS\PLOLMS\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Projects\PLOLMS\PLOLMS\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Projects\PLOLMS\PLOLMS\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Projects\PLOLMS\PLOLMS\bin\Microsoft.Owin.xml
+D:\Projects\PLOLMS\PLOLMS\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Projects\PLOLMS\PLOLMS\bin\Microsoft.Owin.Security.xml
+D:\Projects\PLOLMS\PLOLMS\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Projects\PLOLMS\PLOLMS\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Projects\PLOLMS\PLOLMS\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Projects\PLOLMS\PLOLMS\bin\Microsoft.Owin.Security.Google.xml
+D:\Projects\PLOLMS\PLOLMS\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Projects\PLOLMS\PLOLMS\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Projects\PLOLMS\PLOLMS\obj\Debug\PLOLMS.dll
+D:\Projects\PLOLMS\PLOLMS\obj\Debug\PLOLMS.pdb
+I:\Office Project\PLOLMS\PLOLMS\bin\ApplicationInsights.config
+I:\Office Project\PLOLMS\PLOLMS\bin\roslyn\csc.exe
+I:\Office Project\PLOLMS\PLOLMS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+I:\Office Project\PLOLMS\PLOLMS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+I:\Office Project\PLOLMS\PLOLMS\bin\roslyn\Microsoft.CodeAnalysis.dll
+I:\Office Project\PLOLMS\PLOLMS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+I:\Office Project\PLOLMS\PLOLMS\bin\roslyn\Microsoft.CSharp.Core.targets
+I:\Office Project\PLOLMS\PLOLMS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+I:\Office Project\PLOLMS\PLOLMS\bin\roslyn\System.Collections.Immutable.dll
+I:\Office Project\PLOLMS\PLOLMS\bin\roslyn\System.Reflection.Metadata.dll
+I:\Office Project\PLOLMS\PLOLMS\bin\roslyn\vbc.exe
+I:\Office Project\PLOLMS\PLOLMS\bin\roslyn\VBCSCompiler.exe
+I:\Office Project\PLOLMS\PLOLMS\bin\roslyn\VBCSCompiler.exe.config
+I:\Office Project\PLOLMS\PLOLMS\bin\PLOLMS.dll.config
+I:\Office Project\PLOLMS\PLOLMS\bin\PLOLMS.dll
+I:\Office Project\PLOLMS\PLOLMS\bin\PLOLMS.pdb
+I:\Office Project\PLOLMS\PLOLMS\bin\Antlr3.Runtime.dll
+I:\Office Project\PLOLMS\PLOLMS\bin\EntityFramework.dll
+I:\Office Project\PLOLMS\PLOLMS\bin\EntityFramework.SqlServer.dll
+I:\Office Project\PLOLMS\PLOLMS\bin\Microsoft.AI.Agent.Intercept.dll
+I:\Office Project\PLOLMS\PLOLMS\bin\Microsoft.AI.DependencyCollector.dll
+I:\Office Project\PLOLMS\PLOLMS\bin\Microsoft.AI.PerfCounterCollector.dll
+I:\Office Project\PLOLMS\PLOLMS\bin\Microsoft.AI.ServerTelemetryChannel.dll
+I:\Office Project\PLOLMS\PLOLMS\bin\Microsoft.AI.Web.dll
+I:\Office Project\PLOLMS\PLOLMS\bin\Microsoft.AI.WindowsServer.dll
+I:\Office Project\PLOLMS\PLOLMS\bin\Microsoft.ApplicationInsights.dll
+I:\Office Project\PLOLMS\PLOLMS\bin\Microsoft.AspNet.Identity.Core.dll
+I:\Office Project\PLOLMS\PLOLMS\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+I:\Office Project\PLOLMS\PLOLMS\bin\Microsoft.AspNet.Identity.Owin.dll
+I:\Office Project\PLOLMS\PLOLMS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+I:\Office Project\PLOLMS\PLOLMS\bin\Microsoft.Owin.dll
+I:\Office Project\PLOLMS\PLOLMS\bin\Microsoft.Owin.Host.SystemWeb.dll
+I:\Office Project\PLOLMS\PLOLMS\bin\Microsoft.Owin.Security.Cookies.dll
+I:\Office Project\PLOLMS\PLOLMS\bin\Microsoft.Owin.Security.dll
+I:\Office Project\PLOLMS\PLOLMS\bin\Microsoft.Owin.Security.Facebook.dll
+I:\Office Project\PLOLMS\PLOLMS\bin\Microsoft.Owin.Security.Google.dll
+I:\Office Project\PLOLMS\PLOLMS\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+I:\Office Project\PLOLMS\PLOLMS\bin\Microsoft.Owin.Security.OAuth.dll
+I:\Office Project\PLOLMS\PLOLMS\bin\Microsoft.Owin.Security.Twitter.dll
+I:\Office Project\PLOLMS\PLOLMS\bin\Microsoft.Web.Infrastructure.dll
+I:\Office Project\PLOLMS\PLOLMS\bin\Newtonsoft.Json.dll
+I:\Office Project\PLOLMS\PLOLMS\bin\Owin.dll
+I:\Office Project\PLOLMS\PLOLMS\bin\System.Web.Helpers.dll
+I:\Office Project\PLOLMS\PLOLMS\bin\System.Web.Mvc.dll
+I:\Office Project\PLOLMS\PLOLMS\bin\System.Web.Optimization.dll
+I:\Office Project\PLOLMS\PLOLMS\bin\System.Web.Razor.dll
+I:\Office Project\PLOLMS\PLOLMS\bin\System.Web.WebPages.Deployment.dll
+I:\Office Project\PLOLMS\PLOLMS\bin\System.Web.WebPages.dll
+I:\Office Project\PLOLMS\PLOLMS\bin\System.Web.WebPages.Razor.dll
+I:\Office Project\PLOLMS\PLOLMS\bin\WebGrease.dll
+I:\Office Project\PLOLMS\PLOLMS\bin\Microsoft.AI.DependencyCollector.xml
+I:\Office Project\PLOLMS\PLOLMS\bin\Microsoft.AI.ServerTelemetryChannel.xml
+I:\Office Project\PLOLMS\PLOLMS\bin\Microsoft.AI.Web.xml
+I:\Office Project\PLOLMS\PLOLMS\bin\Microsoft.AI.WindowsServer.xml
+I:\Office Project\PLOLMS\PLOLMS\bin\Microsoft.ApplicationInsights.xml
+I:\Office Project\PLOLMS\PLOLMS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+I:\Office Project\PLOLMS\PLOLMS\bin\System.Web.Helpers.xml
+I:\Office Project\PLOLMS\PLOLMS\bin\System.Web.Mvc.xml
+I:\Office Project\PLOLMS\PLOLMS\bin\System.Web.Optimization.xml
+I:\Office Project\PLOLMS\PLOLMS\bin\System.Web.Razor.xml
+I:\Office Project\PLOLMS\PLOLMS\bin\System.Web.WebPages.xml
+I:\Office Project\PLOLMS\PLOLMS\bin\System.Web.WebPages.Deployment.xml
+I:\Office Project\PLOLMS\PLOLMS\bin\System.Web.WebPages.Razor.xml
+I:\Office Project\PLOLMS\PLOLMS\bin\Antlr3.Runtime.pdb
+I:\Office Project\PLOLMS\PLOLMS\bin\Newtonsoft.Json.xml
+I:\Office Project\PLOLMS\PLOLMS\bin\EntityFramework.xml
+I:\Office Project\PLOLMS\PLOLMS\bin\EntityFramework.SqlServer.xml
+I:\Office Project\PLOLMS\PLOLMS\bin\Microsoft.AspNet.Identity.Core.xml
+I:\Office Project\PLOLMS\PLOLMS\bin\Microsoft.AspNet.Identity.Owin.xml
+I:\Office Project\PLOLMS\PLOLMS\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+I:\Office Project\PLOLMS\PLOLMS\bin\Microsoft.Owin.xml
+I:\Office Project\PLOLMS\PLOLMS\bin\Microsoft.Owin.Host.SystemWeb.xml
+I:\Office Project\PLOLMS\PLOLMS\bin\Microsoft.Owin.Security.xml
+I:\Office Project\PLOLMS\PLOLMS\bin\Microsoft.Owin.Security.Facebook.xml
+I:\Office Project\PLOLMS\PLOLMS\bin\Microsoft.Owin.Security.Cookies.xml
+I:\Office Project\PLOLMS\PLOLMS\bin\Microsoft.Owin.Security.OAuth.xml
+I:\Office Project\PLOLMS\PLOLMS\bin\Microsoft.Owin.Security.Google.xml
+I:\Office Project\PLOLMS\PLOLMS\bin\Microsoft.Owin.Security.Twitter.xml
+I:\Office Project\PLOLMS\PLOLMS\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+I:\Office Project\PLOLMS\PLOLMS\obj\Debug\PLOLMS.dll
+I:\Office Project\PLOLMS\PLOLMS\obj\Debug\PLOLMS.pdb
+I:\Office Project\PLOLMS\PLOLMS\obj\Debug\PLOLMS.csprojResolveAssemblyReference.cache

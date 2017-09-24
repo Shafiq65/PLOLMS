@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="dc513b792d3a47ecb9cad31dc835bfed" Name="Diagram1">
+        <EntityTypeShape EntityType="PLOLAMSModel.Cell" Width="1.5" PointX="0.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PLOLAMSModel.Depatrment" Width="1.5" PointX="0.75" PointY="12.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="PLOLAMSModel.Designation" Width="1.5" PointX="0.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PLOLAMSModel.DistrictInfo" Width="1.5" PointX="1.5" PointY="21.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="PLOLAMSModel.DivisionInfo" Width="1.5" PointX="1.5" PointY="26" IsExpanded="true" />
+        <EntityTypeShape EntityType="PLOLAMSModel.EmplyeeBaiscInfo" Width="1.5" PointX="0.75" PointY="15.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="PLOLAMSModel.InsideOfficialReciver" Width="1.5" PointX="3" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="PLOLAMSModel.JobStatusType" Width="1.5" PointX="0.75" PointY="29.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="PLOLAMSModel.LetterArchive" Width="1.5" PointX="6" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PLOLAMSModel.LetterAttachment" Width="1.5" PointX="8.25" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="PLOLAMSModel.LetterType" Width="1.5" PointX="3.75" PointY="13" IsExpanded="true" />
+        <EntityTypeShape EntityType="PLOLAMSModel.OfficeInfo" Width="1.75" PointX="0.75" PointY="32.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="PLOLAMSModel.OfficeType" Width="1.5" PointX="1.5" PointY="38.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="PLOLAMSModel.OrganizationInfo" Width="1.5" PointX="6" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="PLOLAMSModel.OutsideLetterSend" Width="1.5" PointX="8.25" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="PLOLAMSModel.PostingInfo" Width="1.5" PointX="3" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PLOLAMSModel.Section" Width="1.5" PointX="0.75" PointY="41.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="PLOLAMSModel.UserInfo" Width="1.5" PointX="3" PointY="16.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="PLOLAMSModel.UserType" Width="1.5" PointX="0.75" PointY="3" IsExpanded="true" />
+        <AssociationConnector Association="PLOLAMSModel.FK_PostingInfo_Cell" ManuallyRouted="false" />
+        <AssociationConnector Association="PLOLAMSModel.FK_PostingInfo_Depatrment" ManuallyRouted="false" />
+        <AssociationConnector Association="PLOLAMSModel.FK_InsideOfficialRecivers_Designation" ManuallyRouted="false" />
+        <AssociationConnector Association="PLOLAMSModel.FK_LetterArchive_Designation" ManuallyRouted="false" />
+        <AssociationConnector Association="PLOLAMSModel.FK_PostingInfo_Designation" ManuallyRouted="false" />
+        <AssociationConnector Association="PLOLAMSModel.FK_DistrictInfo_DivisionInfo" ManuallyRouted="false" />
+        <AssociationConnector Association="PLOLAMSModel.FK_EmplyeeBaiscInfo_DistrictInfo" ManuallyRouted="false" />
+        <AssociationConnector Association="PLOLAMSModel.FK_OfficeInfo_DistrictInfo" ManuallyRouted="false" />
+        <AssociationConnector Association="PLOLAMSModel.FK_LetterArchive_EmplyeeBaiscInfo" ManuallyRouted="false" />
+        <AssociationConnector Association="PLOLAMSModel.FK_PostingInfo_EmplyeeBaiscInfo" ManuallyRouted="false" />
+        <AssociationConnector Association="PLOLAMSModel.FK_UserInfo_EmplyeeBaiscInfo" ManuallyRouted="false" />
+        <AssociationConnector Association="PLOLAMSModel.FK_InsideOfficialRecivers_LetterArchive" ManuallyRouted="false" />
+        <AssociationConnector Association="PLOLAMSModel.FK_InsideOfficialRecivers_OfficeInfo" ManuallyRouted="false" />
+        <AssociationConnector Association="PLOLAMSModel.FK_PostingInfo_JobStatusType" ManuallyRouted="false" />
+        <AssociationConnector Association="PLOLAMSModel.FK_LetterArchive_LetterType" ManuallyRouted="false" />
+        <AssociationConnector Association="PLOLAMSModel.FK_LetterArchive_OfficeInfo" ManuallyRouted="false" />
+        <AssociationConnector Association="PLOLAMSModel.FK_LetterAttachments_LetterArchive" ManuallyRouted="false" />
+        <AssociationConnector Association="PLOLAMSModel.FK_OutsideLetterSend_LetterArchive" ManuallyRouted="false" />
+        <AssociationConnector Association="PLOLAMSModel.FK_OfficeInfo_OfficeType" ManuallyRouted="false" />
+        <AssociationConnector Association="PLOLAMSModel.FK_PostingInfo_OfficeInfo" ManuallyRouted="false" />
+        <AssociationConnector Association="PLOLAMSModel.FK_OutsideLetterSend_OrganizationInfo" ManuallyRouted="false" />
+        <AssociationConnector Association="PLOLAMSModel.FK_PostingInfo_Section" ManuallyRouted="false" />
+        <AssociationConnector Association="PLOLAMSModel.FK_UserInfo_UserType" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="PLOLAMSModel.OfficeTypeWiseDesignation" Width="1.5" PointX="4.125" PointY="23.625" />
+        <EntityTypeShape EntityType="PLOLAMSModel.PersonalLetterReciver" Width="1.5" PointX="8.625" PointY="13" />
+        <AssociationConnector Association="PLOLAMSModel.FK_OfficeTypeWiseDesignation_Designation" />
+        <AssociationConnector Association="PLOLAMSModel.FK_PersonalLetterRecivers_EmplyeeBaiscInfo" />
+        <AssociationConnector Association="PLOLAMSModel.FK_PersonalLetterRecivers_LetterArchive" />
+        <AssociationConnector Association="PLOLAMSModel.FK_OfficeTypeWiseDesignation_OfficeType" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
