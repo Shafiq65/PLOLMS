@@ -676,6 +676,7 @@
       <End Role="OfficeType" EntitySet="OfficeTypes" />
       <End Role="OfficeTypeWiseDesignation" EntitySet="OfficeTypeWiseDesignations" />
     </AssociationSet>
+    <EntitySet Name="view_OfficeInfoDetails" EntityType="PLOLAMSModel.view_OfficeInfoDetails" />
   </EntityContainer>
   <EntityType Name="OfficeTypeWiseDesignation">
     <Key>
@@ -748,4 +749,31 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <EntityType Name="view_OfficeInfoDetails">
+    <Key>
+      <PropertyRef Name="OfficeId" />
+      <PropertyRef Name="OfficeCode" />
+      <PropertyRef Name="OfficName" />
+      <PropertyRef Name="OTId" />
+      <PropertyRef Name="OfficeIsActive" />
+    </Key>
+    <Property Name="OfficeId" Type="Int32" Nullable="false" />
+    <Property Name="OfficeCode" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="OfficName" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="OfficeSN" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="OAdd1" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+    <Property Name="OAdd2" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+    <Property Name="OAdd3" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+    <Property Name="DistrictId" Type="Int32" />
+    <Property Name="OTId" Type="Int32" Nullable="false" />
+    <Property Name="OTName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ParentOfficeId" Type="Int32" />
+    <Property Name="ParentOfficeName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="OPhoneNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="OMobileNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="OFaxNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Odesc" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="OfficeIsActive" Type="Boolean" Nullable="false" />
+    <Property Name="DisName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
 </Schema>

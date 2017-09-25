@@ -244,6 +244,35 @@
           <Property Name="UTypeCode" Type="nvarchar" MaxLength="5" Nullable="false" />
           <Property Name="UTypeDesc" Type="nvarchar" MaxLength="200" />
         </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'PLOLAMS.dbo.view_OfficeInfoDetails' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="view_OfficeInfoDetails">
+          <Key>
+            <PropertyRef Name="OfficeId" />
+            <PropertyRef Name="OfficeCode" />
+            <PropertyRef Name="OfficName" />
+            <PropertyRef Name="OTId" />
+            <PropertyRef Name="OfficeIsActive" />
+          </Key>
+          <Property Name="OfficeId" Type="int" Nullable="false" />
+          <Property Name="OfficeCode" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="OfficName" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="OfficeSN" Type="nvarchar" MaxLength="15" />
+          <Property Name="OAdd1" Type="nvarchar" MaxLength="40" />
+          <Property Name="OAdd2" Type="nvarchar" MaxLength="40" />
+          <Property Name="OAdd3" Type="nvarchar" MaxLength="40" />
+          <Property Name="DistrictId" Type="int" />
+          <Property Name="DisName" Type="nvarchar" MaxLength="50" />
+          <Property Name="OTId" Type="int" Nullable="false" />
+          <Property Name="OTName" Type="nvarchar" MaxLength="50" />
+          <Property Name="ParentOfficeId" Type="int" />
+          <Property Name="ParentOfficeName" Type="nvarchar" MaxLength="100" />
+          <Property Name="OPhoneNo" Type="nvarchar" MaxLength="50" />
+          <Property Name="OMobileNo" Type="nvarchar" MaxLength="50" />
+          <Property Name="OFaxNo" Type="nvarchar" MaxLength="50" />
+          <Property Name="Odesc" Type="nvarchar" MaxLength="300" />
+          <Property Name="OfficeIsActive" Type="bit" Nullable="false" />
+        </EntityType>
         <Association Name="FK_DistrictInfo_DivisionInfo">
           <End Role="DivisionInfo" Type="Self.DivisionInfo" Multiplicity="1" />
           <End Role="DistrictInfo" Type="Self.DistrictInfo" Multiplicity="*" />
@@ -590,6 +619,28 @@
           <EntitySet Name="Section" EntityType="Self.Section" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="UserInfo" EntityType="Self.UserInfo" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="UserType" EntityType="Self.UserType" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="view_OfficeInfoDetails" EntityType="Self.view_OfficeInfoDetails" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [view_OfficeInfoDetails].[OfficeId] AS [OfficeId], 
+    [view_OfficeInfoDetails].[OfficeCode] AS [OfficeCode], 
+    [view_OfficeInfoDetails].[OfficName] AS [OfficName], 
+    [view_OfficeInfoDetails].[OfficeSN] AS [OfficeSN], 
+    [view_OfficeInfoDetails].[OAdd1] AS [OAdd1], 
+    [view_OfficeInfoDetails].[OAdd2] AS [OAdd2], 
+    [view_OfficeInfoDetails].[OAdd3] AS [OAdd3], 
+    [view_OfficeInfoDetails].[DistrictId] AS [DistrictId], 
+    [view_OfficeInfoDetails].[DisName] AS [DisName], 
+    [view_OfficeInfoDetails].[OTId] AS [OTId], 
+    [view_OfficeInfoDetails].[OTName] AS [OTName], 
+    [view_OfficeInfoDetails].[ParentOfficeId] AS [ParentOfficeId], 
+    [view_OfficeInfoDetails].[ParentOfficeName] AS [ParentOfficeName], 
+    [view_OfficeInfoDetails].[OPhoneNo] AS [OPhoneNo], 
+    [view_OfficeInfoDetails].[OMobileNo] AS [OMobileNo], 
+    [view_OfficeInfoDetails].[OFaxNo] AS [OFaxNo], 
+    [view_OfficeInfoDetails].[Odesc] AS [Odesc], 
+    [view_OfficeInfoDetails].[OfficeIsActive] AS [OfficeIsActive]
+    FROM [dbo].[view_OfficeInfoDetails] AS [view_OfficeInfoDetails]</DefiningQuery>
+          </EntitySet>
           <AssociationSet Name="FK_DistrictInfo_DivisionInfo" Association="Self.FK_DistrictInfo_DivisionInfo">
             <End Role="DivisionInfo" EntitySet="DivisionInfo" />
             <End Role="DistrictInfo" EntitySet="DistrictInfo" />
@@ -1379,6 +1430,7 @@
             <End Role="OfficeType" EntitySet="OfficeTypes" />
             <End Role="OfficeTypeWiseDesignation" EntitySet="OfficeTypeWiseDesignations" />
           </AssociationSet>
+          <EntitySet Name="view_OfficeInfoDetails" EntityType="PLOLAMSModel.view_OfficeInfoDetails" />
         </EntityContainer>
         <EntityType Name="OfficeTypeWiseDesignation">
           <Key>
@@ -1451,6 +1503,33 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <EntityType Name="view_OfficeInfoDetails">
+          <Key>
+            <PropertyRef Name="OfficeId" />
+            <PropertyRef Name="OfficeCode" />
+            <PropertyRef Name="OfficName" />
+            <PropertyRef Name="OTId" />
+            <PropertyRef Name="OfficeIsActive" />
+          </Key>
+          <Property Name="OfficeId" Type="Int32" Nullable="false" />
+          <Property Name="OfficeCode" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="OfficName" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="OfficeSN" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Name="OAdd1" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+          <Property Name="OAdd2" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+          <Property Name="OAdd3" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+          <Property Name="DistrictId" Type="Int32" />
+          <Property Name="OTId" Type="Int32" Nullable="false" />
+          <Property Name="OTName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ParentOfficeId" Type="Int32" />
+          <Property Name="ParentOfficeName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="OPhoneNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="OMobileNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="OFaxNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Odesc" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+          <Property Name="OfficeIsActive" Type="Boolean" Nullable="false" />
+          <Property Name="DisName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -1714,6 +1793,30 @@
                 <ScalarProperty Name="EmplyeeId" ColumnName="EmplyeeId" />
                 <ScalarProperty Name="LetterArchiveId" ColumnName="LetterArchiveId" />
                 <ScalarProperty Name="PLRId" ColumnName="PLRId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="view_OfficeInfoDetails">
+            <EntityTypeMapping TypeName="PLOLAMSModel.view_OfficeInfoDetails">
+              <MappingFragment StoreEntitySet="view_OfficeInfoDetails">
+                <ScalarProperty Name="DisName" ColumnName="DisName" />
+                <ScalarProperty Name="OfficeIsActive" ColumnName="OfficeIsActive" />
+                <ScalarProperty Name="Odesc" ColumnName="Odesc" />
+                <ScalarProperty Name="OFaxNo" ColumnName="OFaxNo" />
+                <ScalarProperty Name="OMobileNo" ColumnName="OMobileNo" />
+                <ScalarProperty Name="OPhoneNo" ColumnName="OPhoneNo" />
+                <ScalarProperty Name="ParentOfficeName" ColumnName="ParentOfficeName" />
+                <ScalarProperty Name="ParentOfficeId" ColumnName="ParentOfficeId" />
+                <ScalarProperty Name="OTName" ColumnName="OTName" />
+                <ScalarProperty Name="OTId" ColumnName="OTId" />
+                <ScalarProperty Name="DistrictId" ColumnName="DistrictId" />
+                <ScalarProperty Name="OAdd3" ColumnName="OAdd3" />
+                <ScalarProperty Name="OAdd2" ColumnName="OAdd2" />
+                <ScalarProperty Name="OAdd1" ColumnName="OAdd1" />
+                <ScalarProperty Name="OfficeSN" ColumnName="OfficeSN" />
+                <ScalarProperty Name="OfficName" ColumnName="OfficName" />
+                <ScalarProperty Name="OfficeCode" ColumnName="OfficeCode" />
+                <ScalarProperty Name="OfficeId" ColumnName="OfficeId" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

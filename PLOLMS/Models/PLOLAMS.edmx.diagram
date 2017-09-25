@@ -53,6 +53,7 @@
         <AssociationConnector Association="PLOLAMSModel.FK_PersonalLetterRecivers_EmplyeeBaiscInfo" />
         <AssociationConnector Association="PLOLAMSModel.FK_PersonalLetterRecivers_LetterArchive" />
         <AssociationConnector Association="PLOLAMSModel.FK_OfficeTypeWiseDesignation_OfficeType" />
+        <EntityTypeShape EntityType="PLOLAMSModel.view_OfficeInfoDetails" Width="1.5" PointX="8.375" PointY="0.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

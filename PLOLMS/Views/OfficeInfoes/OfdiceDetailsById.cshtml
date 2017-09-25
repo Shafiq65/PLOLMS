@@ -1,0 +1,115 @@
+﻿@model PLOLMS.Models.view_OfficeInfoDetails
+
+@{
+    ViewBag.Title = "OfdiceDetailsById";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div>
+    <h4>Office Info Details</h4>
+    <hr />
+    <dl class="dl-horizontal">
+
+        <dt>
+            @Html.DisplayName("Office Type")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OTName)
+        </dd>
+        <dt>
+            @Html.DisplayName("Office Code")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OfficeCode)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Name")
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.OfficName)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Short Name")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OfficeSN)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Address")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OAdd1)
+        </dd>
+        <dt></dt>
+        <dd>
+            @Html.DisplayFor(model => model.OAdd2)
+        </dd>
+        <dt></dt>
+        <dd>
+            @Html.DisplayFor(model => model.OAdd3)
+        </dd>
+
+
+        <dt>
+            @Html.DisplayName("Parent Office Name")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ParentOfficeName)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("District")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DisName)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Phone No")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OPhoneNo)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Mobile No")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OMobileNo)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Fax No")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OFaxNo)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Description")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Odesc)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { OfficeId = Model.OfficeId }, new { @class = "btn btn-primary" }) |
+    @Html.ActionLink("Back to List", "OfficeList", new { TypeId = Model.OTId }, new { @class = "btn btn-warning" })
+
+</p>

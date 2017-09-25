@@ -1,0 +1,112 @@
+﻿@model IEnumerable<PLOLMS.Models.OfficeInfo>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.OfficeCode)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OfficName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OfficeSN)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OAdd1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OAdd2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OAdd3)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OPhoneNo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OMobileNo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OFaxNo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Odesc)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OfficeIsActive)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ParentOfficeId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DistrictInfo.DisName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OfficeType.OTName)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.OfficeCode)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OfficName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OfficeSN)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OAdd1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OAdd2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OAdd3)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OPhoneNo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OMobileNo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OFaxNo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Odesc)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OfficeIsActive)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ParentOfficeId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DistrictInfo.DisName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OfficeType.OTName)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.OfficeId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.OfficeId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.OfficeId })
+        </td>
+    </tr>
+}
+
+</table>

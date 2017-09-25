@@ -1,0 +1,131 @@
+﻿@model PLOLMS.Models.OfficeInfo
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>OfficeInfo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayName("Office Code")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OfficeCode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OfficName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OfficName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OfficeSN)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OfficeSN)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OAdd1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OAdd1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OAdd2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OAdd2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OAdd3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OAdd3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OPhoneNo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OPhoneNo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OMobileNo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OMobileNo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OFaxNo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OFaxNo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Odesc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Odesc)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OfficeIsActive)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OfficeIsActive)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ParentOfficeId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ParentOfficeId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DistrictInfo.DisName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DistrictInfo.DisName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OfficeType.OTName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OfficeType.OTName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.OfficeId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

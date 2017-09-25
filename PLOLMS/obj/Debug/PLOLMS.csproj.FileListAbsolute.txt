@@ -242,3 +242,4 @@ D:\BEES Projects\Git Hub Project\PLOLMS\PLOLMS\bin\Microsoft.Owin.Security.Twitt
 D:\BEES Projects\Git Hub Project\PLOLMS\PLOLMS\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 D:\BEES Projects\Git Hub Project\PLOLMS\PLOLMS\obj\Debug\PLOLMS.dll
 D:\BEES Projects\Git Hub Project\PLOLMS\PLOLMS\obj\Debug\PLOLMS.pdb
+D:\BEES Projects\Git Hub Project\PLOLMS\PLOLMS\obj\Debug\PLOLMS.csprojResolveAssemblyReference.cache

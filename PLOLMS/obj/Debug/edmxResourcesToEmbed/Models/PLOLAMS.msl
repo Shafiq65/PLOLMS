@@ -261,5 +261,29 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="view_OfficeInfoDetails">
+      <EntityTypeMapping TypeName="PLOLAMSModel.view_OfficeInfoDetails">
+        <MappingFragment StoreEntitySet="view_OfficeInfoDetails">
+          <ScalarProperty Name="DisName" ColumnName="DisName" />
+          <ScalarProperty Name="OfficeIsActive" ColumnName="OfficeIsActive" />
+          <ScalarProperty Name="Odesc" ColumnName="Odesc" />
+          <ScalarProperty Name="OFaxNo" ColumnName="OFaxNo" />
+          <ScalarProperty Name="OMobileNo" ColumnName="OMobileNo" />
+          <ScalarProperty Name="OPhoneNo" ColumnName="OPhoneNo" />
+          <ScalarProperty Name="ParentOfficeName" ColumnName="ParentOfficeName" />
+          <ScalarProperty Name="ParentOfficeId" ColumnName="ParentOfficeId" />
+          <ScalarProperty Name="OTName" ColumnName="OTName" />
+          <ScalarProperty Name="OTId" ColumnName="OTId" />
+          <ScalarProperty Name="DistrictId" ColumnName="DistrictId" />
+          <ScalarProperty Name="OAdd3" ColumnName="OAdd3" />
+          <ScalarProperty Name="OAdd2" ColumnName="OAdd2" />
+          <ScalarProperty Name="OAdd1" ColumnName="OAdd1" />
+          <ScalarProperty Name="OfficeSN" ColumnName="OfficeSN" />
+          <ScalarProperty Name="OfficName" ColumnName="OfficName" />
+          <ScalarProperty Name="OfficeCode" ColumnName="OfficeCode" />
+          <ScalarProperty Name="OfficeId" ColumnName="OfficeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
   </EntityContainerMapping>
 </Mapping>
