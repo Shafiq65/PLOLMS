@@ -46,5 +46,6 @@ namespace PLOLMS.Models
         public virtual DbSet<UserType> UserTypes { get; set; }
         public virtual DbSet<OfficeTypeWiseDesignation> OfficeTypeWiseDesignations { get; set; }
         public virtual DbSet<PersonalLetterReciver> PersonalLetterRecivers { get; set; }
+        public virtual DbSet<view_OfficeInfoDetails> view_OfficeInfoDetails { get; set; }
     }
 }

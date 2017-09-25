@@ -203,6 +203,7 @@
     <Compile Include="Controllers\DivisionInfoesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\OfficeInfoesController.cs" />
     <Compile Include="Controllers\OfficeTypesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -286,6 +287,9 @@
       <DependentUpon>PLOLAMS.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\UserType.cs">
+      <DependentUpon>PLOLAMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\view_OfficeInfoDetails.cs">
       <DependentUpon>PLOLAMS.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -1138,6 +1142,7 @@
     <Content Include="Views\Cells\Index.cshtml" />
     <Content Include="Views\Cells\CreateAndView.cshtml" />
     <Content Include="Views\OfficeTypes\CreateandView.cshtml" />
+<<<<<<< HEAD
     <Content Include="Views\Designations\Create.cshtml" />
     <Content Include="Views\Designations\Delete.cshtml" />
     <Content Include="Views\Designations\Details.cshtml" />
@@ -1150,6 +1155,17 @@
     <Content Include="Views\DivisionInfoes\Edit.cshtml" />
     <Content Include="Views\DivisionInfoes\Index.cshtml" />
     <Content Include="Views\DivisionInfoes\CreateAndView.cshtml" />
+=======
+    <Content Include="Views\OfficeInfoes\Create.cshtml" />
+    <Content Include="Views\OfficeInfoes\Delete.cshtml" />
+    <Content Include="Views\OfficeInfoes\Details.cshtml" />
+    <Content Include="Views\OfficeInfoes\Edit.cshtml" />
+    <Content Include="Views\OfficeInfoes\Index.cshtml" />
+    <Content Include="Views\OfficeInfoes\HeadOfficeCreate.cshtml" />
+    <Content Include="Views\OfficeInfoes\OfficeList.cshtml" />
+    <Content Include="Views\OfficeInfoes\OfdiceDetailsById.cshtml" />
+    <Content Include="Views\OfficeInfoes\CreateOfficeByType.cshtml" />
+>>>>>>> a52f800ada884b3ab449d1d3ab54c823f1a783db
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

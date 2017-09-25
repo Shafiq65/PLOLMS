@@ -242,6 +242,7 @@ D:\BEES Projects\Git Hub Project\PLOLMS\PLOLMS\bin\Microsoft.Owin.Security.Twitt
 D:\BEES Projects\Git Hub Project\PLOLMS\PLOLMS\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 D:\BEES Projects\Git Hub Project\PLOLMS\PLOLMS\obj\Debug\PLOLMS.dll
 D:\BEES Projects\Git Hub Project\PLOLMS\PLOLMS\obj\Debug\PLOLMS.pdb
+<<<<<<< HEAD
 I:\Office Project\Live_code\PLOLMS\PLOLMS\bin\ApplicationInsights.config
 I:\Office Project\Live_code\PLOLMS\PLOLMS\bin\roslyn\csc.exe
 I:\Office Project\Live_code\PLOLMS\PLOLMS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
@@ -323,3 +324,6 @@ I:\Office Project\Live_code\PLOLMS\PLOLMS\bin\Microsoft.Owin.Security.Twitter.xm
 I:\Office Project\Live_code\PLOLMS\PLOLMS\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 I:\Office Project\Live_code\PLOLMS\PLOLMS\obj\Debug\PLOLMS.dll
 I:\Office Project\Live_code\PLOLMS\PLOLMS\obj\Debug\PLOLMS.pdb
+=======
+D:\BEES Projects\Git Hub Project\PLOLMS\PLOLMS\obj\Debug\PLOLMS.csprojResolveAssemblyReference.cache
+>>>>>>> a52f800ada884b3ab449d1d3ab54c823f1a783db
