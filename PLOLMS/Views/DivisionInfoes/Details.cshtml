@@ -1,0 +1,42 @@
+﻿@model PLOLMS.Models.DivisionInfo
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div>
+    <h3>Division Information</h3>
+   
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayName("Name")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DivisionName)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Code")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DivisionCode)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Description")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DivisionDesc)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.DivisionId },new { @class="btn btn-primary"}) 
+    @Html.ActionLink("Back to List", "CreateAndView", null,new { @class = "btn btn-primary" })
+</p>

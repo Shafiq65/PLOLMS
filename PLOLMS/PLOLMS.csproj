@@ -199,6 +199,8 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\CellsController.cs" />
+    <Compile Include="Controllers\DesignationsController.cs" />
+    <Compile Include="Controllers\DivisionInfoesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\OfficeTypesController.cs" />
@@ -1136,6 +1138,18 @@
     <Content Include="Views\Cells\Index.cshtml" />
     <Content Include="Views\Cells\CreateAndView.cshtml" />
     <Content Include="Views\OfficeTypes\CreateandView.cshtml" />
+    <Content Include="Views\Designations\Create.cshtml" />
+    <Content Include="Views\Designations\Delete.cshtml" />
+    <Content Include="Views\Designations\Details.cshtml" />
+    <Content Include="Views\Designations\Edit.cshtml" />
+    <Content Include="Views\Designations\Index.cshtml" />
+    <Content Include="Views\Designations\CreateAndView.cshtml" />
+    <Content Include="Views\DivisionInfoes\Create.cshtml" />
+    <Content Include="Views\DivisionInfoes\Delete.cshtml" />
+    <Content Include="Views\DivisionInfoes\Details.cshtml" />
+    <Content Include="Views\DivisionInfoes\Edit.cshtml" />
+    <Content Include="Views\DivisionInfoes\Index.cshtml" />
+    <Content Include="Views\DivisionInfoes\CreateAndView.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

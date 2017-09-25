@@ -1,4 +1,4 @@
-﻿@model PLOLMS.Models.Cell
+﻿@model PLOLMS.Models.Designation
 
 @{
     ViewBag.Title = "Details";
@@ -8,15 +8,15 @@
 
 
 <div>
-    <h3>Cell Details</h3>
-    
+    <h3>Designation Details</h3>
+    <hr />
     <dl class="dl-horizontal">
         <dt>
             @Html.DisplayName("Name")
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.CellName)
+            @Html.DisplayFor(model => model.Dname)
         </dd>
 
         <dt>
@@ -24,7 +24,7 @@
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.CellCode)
+            @Html.DisplayFor(model => model.DesignationCode)
         </dd>
 
         <dt>
@@ -32,12 +32,20 @@
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.CellDesc)
+            @Html.DisplayFor(model => model.DDesc)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("IsActive")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsActive)
         </dd>
 
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.CellId }, new { @class = "btn btn-primary" }) 
+    @Html.ActionLink("Edit", "Edit", new { id = Model.DId }, new { @class = "btn btn-primary" }) 
     @Html.ActionLink("Back to List", "CreateAndView",null, new { @class = "btn btn-primary" })
 </p>
